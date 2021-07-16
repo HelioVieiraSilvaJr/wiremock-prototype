@@ -1,11 +1,11 @@
 {
   "request" : {
-    "url" : "/home",
+    "url" : "/",
     "method" : "GET"
   },
   "response" : {
     "status" : 200,
-    "bodyFileName" : "home/home.json",
+    "bodyFileName" : "welcome.json",
     "headers" : {
       "Content-Type" : "application/json; charset=utf-8"
     }
