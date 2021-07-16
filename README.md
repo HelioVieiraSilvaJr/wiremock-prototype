@@ -103,3 +103,17 @@ Temos 2 principais maneiras de responder ao request:
   "body": "{ \"status\":\"invalid_document\", \"message\":\"Os números não correspondem ao CPF cadastrado. \\n Tente novamente.\"}"
 }
 ```
+
+Para usar uma URL com parte dinamica podemos adicionar um Regex na parte desejada, usando o `"urlPathPattern"`
+```
+"request": {
+  "urlPathPattern": "/entry/([a-zA-Z0-9]*)/point",
+  "method": "GET"
+}
+```
+```
+"request": {
+  "urlPathPattern": "/document/([0-9]*)",
+  "method": "GET"
+}
+```
